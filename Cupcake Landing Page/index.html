@@ -15,13 +15,16 @@
     
     <nav>
         <img src="images/logo.png" alt="">
-        <ul>
+        <ul id="menu-links">
             <li>Home</li>
             <li>Services</li>
             <li>Projects</li>
             <li>About us</li>
         </ul>
         <button class="nav-btn">Get Started <img src="images/arrow-white.png" alt=""></button>
+
+        <img src="images/menu.png" class="menu-icon" alt=""
+        onclick="toogleMenu()">
     </nav>
 
     <div class="header">
@@ -34,8 +37,18 @@
         </div>
     </div>
 
+
+
+
     <script>
         let navbar = document.querySelector('nav');
+        let menuLinks = document.getElementById("menu-links");
+
+        function toogleMenu(){
+            menuLinks.classList.toggle('show-menu');
+        }
+
+
 
         window.onscroll = function(){
             if(window.scrollY > 0){

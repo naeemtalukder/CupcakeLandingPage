@@ -115,6 +115,15 @@ nav .logo{
     bottom: 0;
 }
 
+.menu-icon{
+    display: none;
+}
+
+.show-menu{
+    max-height: 60px;
+}
+
+
 /* ------- animation ------- */
 .header h1 span{
     background: linear-gradient(#000, #000);
@@ -153,6 +162,8 @@ nav .logo{
     }
 }
 
+
+
 /* ------- Media queries for Navbar -------- */
 @media only screen and (max-width: 600px){
     nav ul{
@@ -163,6 +174,9 @@ nav .logo{
         left: 0;
         top: 100%;
         text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
     }
     .nav-btn{
         display: none;
@@ -173,5 +187,9 @@ nav .logo{
     nav ul li{
         margin: 10px;
         font-size: 14px;
+    }
+    .menu-icon{
+        display: block;
+        width: 30px;
     }
 }
