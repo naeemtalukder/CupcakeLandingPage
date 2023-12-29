@@ -24,5 +24,27 @@
         <button class="nav-btn">Get Started <img src="images/arrow-white.png" alt=""></button>
     </nav>
 
+    <div class="header">
+        <h1>FREE<br>LANCER</h1>
+        <div class="btn-container">
+            <button class="btn-dark">Request call back <img src="/images/phone.png" alt=""></button>
+            <button class="btn-light">Know mone <img src="/images/arrow-black.png" alt=""></button>
+            <p>Passionate Video Editor & Flim Maker with 2+ years of experience.</p>
+            <img src="images/user.png" alt="" class="user-img">
+        </div>
+    </div>
+
+    <script>
+        let navbar = document.querySelector('nav');
+
+        window.onscroll = function(){
+            if(window.scrollY > 0){
+                navbar.style.background = '#eefff9';
+            }else{
+                navbar.style.background = 'transparent';
+            }
+        }
+    </script>
+
 </body>
 </html>
