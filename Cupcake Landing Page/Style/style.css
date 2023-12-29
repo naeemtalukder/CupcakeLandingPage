@@ -214,6 +214,7 @@ nav .logo{
         padding: 0 10%;
         z-index: 2;
         padding-bottom: 40px;
+        background: linear-gradient(transparent, #fff);
     }
     .btn-container{
         margin: 5px 0;
@@ -234,5 +235,10 @@ nav .logo{
     .btn-light img{
         width: 12px;
         margin-left: 5px;
+    }
+    .header h1{
+        font-size: 70px;
+        line-height: 60px;
+        margin-bottom: 20px;
     }
 }
